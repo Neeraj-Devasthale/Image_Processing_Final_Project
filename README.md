@@ -97,7 +97,7 @@ Main execution script:
 1. Model has been programmed on python version 3.9.13 It is possible higher versions might show tensorflow compatibility errors with 'distutils' module of python which is why I eventually switched to this python version. This one works very nicely.
 2. Cloning the repository and running the script:
    ```bash
-   git clone https://github.com/Neeraj-Devasthale/Image_Processing_Final_Project.git
+   git clone https://github.com/Neeraj-Devasthale/project_Devasthale_Neeraj_Shriniwas.git
    cd Image_Processing_Final_Project
    pip install -r requirements.txt
    python main.py

@@ -88,4 +88,4 @@ Main execution script:
 1. Model has been programmed on python version 3.9.13 It is possible higher versions might show tensorflow compatibility errors with 'distutils' module of python which is why I eventually switched to this python version. This one works very nicely.
 2. Some installation requirements:
 ```bash
-pip install tensorflow==2.16.1 pandas scikit-learn tabulate matplotlib numpy json os 
+pip install tensorflow==2.16.1 pandas scikit-learn tabulate matplotlib numpy 

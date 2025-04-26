@@ -32,6 +32,8 @@ Apart from required files mentioned in the project structure guidelines, I have 
 4. Use of model.fit function of tensorflow instead of double for loop in train. A double for loop code is provided as mentioned above but using inbuilt functions gives a better UI and is much faster to train. However, results of both the implimentations are very similar.
 5. I have also added the 'main.py', '.gitignore' to the main directory to test the cloned project.
 
+## Important for data access:
+I have shared my data folder to you on gmail. Please unzip it and upload it to the "JSONS" directory. This is the directory my code will look into for training data. I am adding a drive link here for your convenience. Please let me know once you have downloaded the data as I want to take down the link from this public forum. Data link- https://drive.google.com/file/d/1xokuwWX1lAqWrRam10tpOUF-ZWuINu26/view?usp=sharing
 
 ## File Descriptions
 

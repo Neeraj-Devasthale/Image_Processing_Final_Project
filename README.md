@@ -21,4 +21,71 @@ Apart from required files mentioned in the project structure guidelines, I have 
 3. A .py file called 'test_data_creator.py'. This file moves 10 samples per class randomly from directory 'JSONS', my training directory to the testing directory 'data'
 4. A .py file called 'Example main script.py' which contains an implementation of the entire code to process raw JSONs, train, and test.
 
+## Possibly important for evaluation : Slight deviations made for required to handle the JSON data and data directory arrangements
+1. Since I had to make different data loaders for train, test and validation my train function takes in val_loader as an additional input.
+2. Use of model.fit function of tensorflow instead of double for loop in train. A double for loop code is provided as mentioned above but using inbuilt functions gives a better UI and is much faster to train. However, results of both the implimentations are very similar.
+3. 
 
+
+## File Descriptions
+
+### 1. config.py
+Contains all configuration parameters:
+- Model architecture parameters (input dimensions, classes)
+- Training hyperparameters (batch size, epochs, learning rate)
+- Loss function and optimizer configuration
+
+**Key Variables:**
+- `resize_x`, `resize_y`: Input dimensions (39x120)
+- `batch_size`: 512
+- `loss_fn`: Sparse Categorical Crossentropy
+- `optimizer`: Adam with learning rate 0.001
+
+### 2. dataset.py
+Handles data loading and processing:
+
+**Dataset Class:**
+- `load_data()`: Loads and preprocesses training data
+- `load_test_data()`: Loads separate test dataset
+- `split_data()`: 80-20 train-validation split
+- `save_processed_data()`: Saves processed numpy arrays
+
+**Data Loader:**
+- `data_loader()`: Creates TensorFlow datasets
+- data_loader(data_dir, batch_size=256, mode='train'). Program indicates default batch_size and mode is train
+  - Modes: 'train', 'test', 'inference'
+
+### 3. model.py
+CNN architecture with residual blocks:
+- 4 convolutional blocks with max pooling
+- Global average pooling
+- Dense layers with dropout
+- Output layer with softmax activation
+
+### 4. train.py
+Training workflow:
+- Compiles model with specified loss and optimizer
+- Implements early stopping
+- Saves training history plots
+- Returns training metrics
+- train_model(model, num_epochs, train_loader, val_loader, loss_fn, optimizer). This function takes these inputs in this particular order.
+
+### 5. predict.py
+Evaluation and inference:
+- Generates classification reports
+- Creates confusion matrix
+- Saves predictions to CSV
+- Handles test data loading
+- test(model, test_loader=None, test_dir='data'). The function takes in inputs model, test_loader instance which loads the data from test_dir. test_dir is set to 'data' by default
+
+### 6. interface.py
+Main execution script:
+- Initializes dataset and model
+- Coordinates training and evaluation
+- Uses standardized imports as per project requirements along with some key imports from config.py
+
+## Installation
+1. Model has been programmed on python version 3.9.13 It is possible higher versions might show tensorflow compatibility errors with 'distutils' module of python which is why I eventually switched to this python version. This one works very nicely.
+2. Install requirements:
+```bash
+pip install tensorflow==2.16 pandas scikit-learn tabulate

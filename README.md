@@ -14,7 +14,7 @@ MFCCs (MFCCs indicate tonality). Hence, these can be thought of as grayscale ima
 
 The model will be built using strategies like early stopping and dropout regularization, convolution-max pooling layers, cross-entropy loss function, ADAM optimizer, etc. Since CNNs are good at pattern recognition, they may be able to detect patterns which humans detect when examining these spectrograms and I will try different filter dimensions to capture these patterns. 
 
-Human annotations achieve 85 percent inter-observer agreement. This provides a benchmark for the model performance.
+Human annotations achieve 85 percent inter-observer agreement. This provides a benchmark for the model performance. Accuracy is the target metric since we want to make sure that maximum number of samples are classified correctly to minimize human labour. It does not matter whether a particular class displays poor accuracy for this application i.e accuracy matters more than precision, recall and F1 scores. However, the model displays good performance for these metrics as well.
 
 
 # Key details about the directories, files and models

@@ -30,7 +30,7 @@ Apart from required files mentioned in the project structure guidelines, I have 
 2. processed_data directory stores classes.npy, training and validation numpy arrays. However, training and validation arrays were too large to upload. Hence, the folder only shows classes file currently.
 3. Since I had to make different data loaders for train, test and validation my train function takes in val_loader as an additional input.
 4. Use of model.fit function of tensorflow instead of double for loop in train. A double for loop code is provided as mentioned above but using inbuilt functions gives a better UI and is much faster to train. However, results of both the implimentations are very similar.
-5. I have also added the 'Example main script.py' to the main directory to test the cloned project.
+5. I have also added the 'Example main script.py', '.gitignore' to the main directory to test the cloned project.
 
 
 ## File Descriptions
@@ -93,6 +93,10 @@ Main execution script:
 
 ## Installation
 1. Model has been programmed on python version 3.9.13 It is possible higher versions might show tensorflow compatibility errors with 'distutils' module of python which is why I eventually switched to this python version. This one works very nicely.
-2. Some installation requirements:
+2. Cloning the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+3. Some installation requirements:
 ```bash
 pip install tensorflow==2.16.1 pandas scikit-learn tabulate matplotlib numpy 

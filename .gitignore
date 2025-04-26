@@ -1,0 +1,6 @@
+# .gitignore
+*.npy
+*.h5
+*.png
+!JSONS/sample*.json   # Keep sample training files
+!data/test_sample*.json  # Keep sample test files

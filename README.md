@@ -26,7 +26,7 @@ Apart from required files mentioned in the project structure guidelines, I have 
 4. A .py file called 'Example main script.py' which contains an implementation of the entire code to process raw JSONs, train, and test.
 
 ## Important things to note while evaluation 
-1. I have added a 'JSONS' directory. This should contain all the data. However, I cannot make the data public, uploading all at the same time is also not possible. Due to these reasons, I have uploaded a few JSON files just to illustrate how the directly looks.
+1. I have added a 'JSONS' directory. This should contain all the data. However, I cannot make the data public, uploading all at the same time is also not possible. Due to these reasons, I have uploaded a few JSON files just to illustrate how the directly looks. The course instructor can mail for complete data and I can send it privately if needed.
 2. processed_data directory stores classes.npy, training and validation numpy arrays. However, training and validation arrays were too large to upload. Hence, the folder only shows classes file currently.
 3. Since I had to make different data loaders for train, test and validation my train function takes in val_loader as an additional input.
 4. Use of model.fit function of tensorflow instead of double for loop in train. A double for loop code is provided as mentioned above but using inbuilt functions gives a better UI and is much faster to train. However, results of both the implimentations are very similar.

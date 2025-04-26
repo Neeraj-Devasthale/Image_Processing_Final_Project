@@ -98,7 +98,7 @@ Main execution script:
 2. Cloning the repository and running the script:
    ```bash
    git clone https://github.com/Neeraj-Devasthale/project_Devasthale_Neeraj_Shriniwas.git
-   cd Image_Processing_Final_Project
+   cd project_Devasthale_Neeraj_Shriniwas
    pip install -r requirements.txt
    python main.py
    

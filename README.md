@@ -21,7 +21,7 @@ Accuracy is the target metric since we want to make sure that maximum number of 
 ![image](https://github.com/user-attachments/assets/b192f59e-0385-418b-8b48-44be4200cc1c)
 
 
-# Key details about the directories, files and models
+### Key details about the directories, files and models
 
 Apart from required files mentioned in the project structure guidelines, I have included following files to aid evaluation, understanding and implementation of code and some utility codes I used along the way. These are provided in Utils folder and include:
 1. A folder called "Complete model run". This has directories 'checkpoints', 'data', a .docx file containing entire terminal output and a .png file with plots of accuracy and loss for validation and training with epoch number on x-axis

@@ -29,6 +29,10 @@ Apart from required files mentioned in the project structure guidelines, I have 
 3. A .py file called 'test_data_creator.py'. This file moves 10 samples per class randomly from directory 'JSONS', my training directory to the testing directory 'data'
 4. A .py file called 'Example main script.py' which contains an implementation of the entire code to process raw JSONs, train, and test.
 
+
+# A key note on file labelling and label retrieval: 
+The labels are fetched by the code from file names itself. All individual JSON files follow this format of naming- the type of note is delimited by a hyphen '-' e.g c-_3738_2022_SR-16_4385_4503. Here c is the type of note. This is then followed by 2 numbers (separated by an underscore), an alphanumeric code and two numbers (separated by a underscore) as can be seen in given example.
+
 ## Important things to note while evaluation 
 1. I have added a 'JSONS' directory. This should contain all the data. However, I cannot make the data public, uploading all at the same time is also not possible. Due to these reasons, I have uploaded a few JSON files just to illustrate how the directly looks. I have mentioned how to get all the training data used for this in the next section.
 2. processed_data directory stores classes.npy, training and validation numpy arrays. However, training and validation arrays were too large to upload. Hence, the folder only shows classes file currently.
@@ -63,6 +67,7 @@ Handles data loading and processing:
 - `load_test_data()`: Loads separate test dataset
 - `split_data()`: 80-20 train-validation split
 - `save_processed_data()`: Saves processed numpy arrays
+
 
 **Data Loader:**
 - `data_loader()`: Creates TensorFlow datasets

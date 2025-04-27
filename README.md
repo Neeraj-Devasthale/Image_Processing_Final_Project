@@ -101,7 +101,7 @@ Main execution script:
 ## Installation
 1. Model has been programmed on python version 3.9.13 It is possible higher versions might show tensorflow compatibility errors with 'distutils' module of python which is why I eventually switched to this python version. This one works very nicely.
    
-  ## 🛠️ Recommended prerequisites  
+🛠️ Recommended prerequisites  
 - **Python 3.9.13**  
   Download and install from [Python Official Website](https://www.python.org/downloads/release/python-3913/).  
   Verify installation:  

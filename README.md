@@ -34,7 +34,8 @@ Apart from required files mentioned in the project structure guidelines, I have 
 2. processed_data directory stores classes.npy, training and validation numpy arrays. However, training and validation arrays were too large to upload. Hence, the folder only shows classes file currently.
 3. Since I had to make different data loaders for train, test and validation my train function takes in val_loader as an additional input.
 4. Use of model.fit function of tensorflow instead of double for loop in train. A double for loop code is provided as mentioned above but using inbuilt functions gives a better UI and is much faster to train. However, results of both the implimentations are very similar.
-5. I have also added the 'main.py', '.gitignore' to the main directory to test the cloned project.
+5. Model is saved as 'final_weights.h5' in checkpoints since that is the format followed by tensorflow.
+6. I have also added the 'main.py', '.gitignore' to the main directory to test the cloned project.
 
 ## Important for data access:
 I have shared my data folder to you on gmail. Please unzip it and upload it to the "JSONS" directory. This is the directory my code will look into for training data. I am adding a drive link here for your convenience. Please let me know once you have downloaded the data as I want to take down the link from this public forum. Data link- https://drive.google.com/file/d/1xokuwWX1lAqWrRam10tpOUF-ZWuINu26/view?usp=sharing
@@ -99,6 +100,16 @@ Main execution script:
 
 ## Installation
 1. Model has been programmed on python version 3.9.13 It is possible higher versions might show tensorflow compatibility errors with 'distutils' module of python which is why I eventually switched to this python version. This one works very nicely.
+   
+  ## 🛠️ Recommended prerequisites  
+- **Python 3.9.13**  
+  Download and install from [Python Official Website](https://www.python.org/downloads/release/python-3913/).  
+  Verify installation:  
+  ```bash
+  python --version
+  # Output: Python 3.9.13
+
+
 2. Cloning the repository and running the script:
    ```bash
    git clone https://github.com/Neeraj-Devasthale/project_Devasthale_Neeraj_Shriniwas.git

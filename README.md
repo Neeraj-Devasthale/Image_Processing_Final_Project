@@ -30,7 +30,8 @@ Apart from required files mentioned in the project structure guidelines, I have 
 4. A .py file called 'Example main script.py' which contains an implementation of the entire code to process raw JSONs, train, and test.
 
 
-# A key note on file labelling and label retrieval: 
+## A key note on file labelling and label retrieval: 
+
 The labels are fetched by the code from file names itself. All individual JSON files follow this format of naming- the type of note is delimited by a hyphen '-' e.g c-_3738_2022_SR-16_4385_4503. Here c is the type of note. This is then followed by 2 numbers (separated by an underscore), an alphanumeric code and two numbers (separated by a underscore) as can be seen in given example.
 
 ## Important things to note while evaluation 

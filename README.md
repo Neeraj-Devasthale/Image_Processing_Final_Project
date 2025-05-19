@@ -43,7 +43,7 @@ The labels are fetched by the code from file names itself. All individual JSON f
 6. I have also added the 'main.py', '.gitignore' to the main directory to test the cloned project.
 
 ## Important for data access:
-I have shared my data folder to you on gmail. Please unzip it and upload it to the "JSONS" directory. This is the directory my code will look into for training data. I am adding a drive link here for your convenience. Please let me know once you have downloaded the data as I want to take down the link from this public forum. Data link- https://drive.google.com/file/d/1xokuwWX1lAqWrRam10tpOUF-ZWuINu26/view?usp=sharing.
+I have shared my data folder to you on gmail. Please unzip it and upload it to the "JSONS" directory. This is the directory my code will look into for training data. I am adding a drive link here for your convenience. Please let me know once you have downloaded the data as I want to take down the link from this public forum. Data link- ""LINK REMOVED SINCE GRADING IS DONE""
 All individual JSON files follow this format of naming- the type of note is delimited by a hyphen '-' e.g c-_3738_2022_SR-16_4385_4503. Here c is the type of note. This is then followed by 2 numbers (separated by an underscore), an alphanumeric code and two numbers (separated by a underscore) as can be seen in given example
 
 ## File Descriptions
